@@ -1,0 +1,17 @@
+{% extends 'app/base.html' %}
+{% block main-content %}
+<div class="container">
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="{{profiles.image.url}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{profiles.user}}</h5>
+          <p class="card-text">{{profiles.bio}}.</p>
+          <p class="card-text">followers-{{profiles.followers}}.</p>
+          <p class="card-text">following-{{profiles.following}}.</p>
+
+
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+</div>
+ {% endblock main-content %}
